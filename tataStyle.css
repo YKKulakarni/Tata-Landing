@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Candal&family=Grey+Qo&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.222);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+}
+nav .nav-items{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+nav .nav-items a{
+    text-decoration: none;
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+}
+nav a::before{
+    content:"";
+    height: 3px;
+    width: 0px;
+    display: inline-block;
+    background-color: black;
+    position: relative;
+    top: 30px;
+    border-radius: 50px;
+}
+a:hover::before{
+    width: 100%;
+    transition: all .3s linear;
+}
+nav .nav-icon{
+    display: flex;
+    gap: 30px;
+}
+
+/* Contact */
+.contact{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(71, 78, 78);
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    box-shadow: -1px -1px 10px black;
+    .call,.test-drive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    svg{
+        animation: zoom-up 0.5s linear infinite alternate;
+    }
+}
+@keyframes zoom-up {
+    to{
+        transform:scale(1.2);
+    }
+}
+.primary-link{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+/* Home */
+.home{
+    height: 80vh;
+    width: 100%;
+     background:linear-gradient(90deg,rgba(255, 255, 255, 0) 600px,rgb(151, 117, 30));
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     p{
+        width: 450px;
+        text-align: center;
+     }
+     .home-text{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+     }
+}
+.primary-para{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+.primary-head{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+/* Price section */
+.section-price{
+    height: 65vh;
+    width: 100%;
+    background-color:  rgb(71, 78, 78);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    .price-left{
+        height: 100%;
+        width: 48%;
+        .loc{
+            height: 30px;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 180px;
+            border-bottom: 2px solid;
+            p{
+                font-family: "Noto Sans", sans-serif;
+                font-weight: 400;
+                font-size: 1.1rem;
+                text-transform: uppercase;
+            }
+        }
+        button{
+            background-color: transparent;
+            border: none;
+            color: white;
+        }
+        .loc:hover{
+            cursor:pointer;
+        }
+    }
+    .price-right{
+        height: 100%;
+        width: 48%;
+        background-color: whitesmoke;
+    }
+}
+.secondary-para{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.cities{
+    height: 300px;
+    width: 310px;
+    background-color: rgb(38, 26, 26);
+    box-shadow: 1px 1px 10px black;
+    position: absolute;
+    top: 653px;
+    left: 27px;
+    border: none;
+    color: white;
+    p{
+        line-height: 30px;
+    }
+}
+.cities::-webkit-scrollbar{
+    width: 10px;
+}
+.cities::-webkit-scrollbar-track{
+    width: 10px;
+    background-color: gainsboro;
+}
+.cities::-webkit-scrollbar-thumb{
+    background-color:  rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0,0.5) inset;
+    height: 100px;
+}
+
+
